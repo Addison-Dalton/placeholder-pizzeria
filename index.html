@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Order Pizza</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!--page content-->
+    <div class="container">
+        <!--header-->
+        <header class="text-center">
+            <div id="header">
+                <h1>The Placeholder Pizzeria</h1>
+            </div>
+        </header>
+        <!--/header-->
+
+        <!--order box-->
+        <section>
+            <div class="order-box-container">
+                <!--CRUST-->
+                <div id="crust-selection" class="order-box-content row">
+                    <div class="order-box-options order-box-horz-divider col-md-6 col-s-12">
+                        <div class="order-box-subhead text-center text-uppercase">
+                            <h3>Crust Size</h3>
+                        </div>
+                        <div>
+                            <div class="radio calcPrice">
+                                <label>
+                                    <input id="personal" type="radio" name="crust-size-radio">Personal - $6:00</label>
+                            </div>
+                            <div class="radio calcPrice">
+                                <label>
+                                    <input id="medium" type="radio" name="crust-size-radio">Medium - $10.00</label>
+                            </div>
+                            <div class="radio calcPrice">
+                                <label>
+                                    <input id="large" type="radio" name="crust-size-radio" checked>Large - $14.00</label>
+                            </div>
+                            <div class="radio calcPrice">
+                                <label>
+                                    <input id="xlarge" type="radio" name="crust-size-radio">XLarge- $16.00</label>
+                            </div>
+                        </div>
+                        <div class="option-notes">
+
+                        </div>
+                    </div>
+                    <div class="order-box-options col-md-6 col-s-12">
+                        <div class="order-box-subhead text-center text-uppercase">
+                            <h3>Crust Type</h3>
+                        </div>
+                        <div>
+                            <div class="radio calcPrice">
+                                <label>
+                                    <input type="radio" name="crust-type-radio" checked>Plain</label>
+                            </div>
+                            <div class="radio calcPrice">
+                                <label>
+                                    <input type="radio" name="crust-type-radio">Garlic Butter</label>
+                            </div>
+                            <div class="radio calcPrice">
+                                <label>
+                                    <input id="stuffed" type="radio" name="crust-type-radio">Cheese Stuffed - +$3.00</label>
+                            </div>
+                            <div class="radio calcPrice">
+                                <label>
+                                    <input type="radio" name="crust-type-radio">Spicy</label>
+                            </div>
+                            <div class="radio calcPrice">
+                                <label>
+                                    <input type="radio" name="crust-type-radio">House Special</label>
+                            </div>
+                        </div>
+                        <div class="option-notes">
+
+                        </div>
+                    </div>
+                </div>
+
+                <!--SAUCE AND CHEESE-->
+                <div id="cheese-sauce-selection" class="order-box-content row">
+                    <div class="order-box-options order-box-horz-divider col-md-6 col-s-12">
+                        <div class="order-box-subhead text-center text-uppercase">
+                            <h3>Sauce</h3>
+                        </div>
+                        <div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="sauce-radio" checked>Marinara</label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="sauce-radio">White</label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="sauce-radio">Barbeque</label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="sauce-radio">None</label>
+                            </div>
+                        </div>
+                        <div class="option-notes">
+
+                        </div>
+                    </div>
+                    <div class="order-box-options col-md-6 col-s-12">
+                        <div class="order-box-subhead text-center text-uppercase">
+                            <h3>Cheese</h3>
+                        </div>
+                        <div>
+                            <div class="radio calcPrice">
+                                <label>
+                                    <input type="radio" name="cheese-radio" checked>Regular</label>
+                            </div>
+                            <div class="radio calcPrice">
+                                <label>
+                                    <input id="extraCheese" type="radio" name="cheese-radio">Extra Cheese - +$3.00</label>
+                            </div>
+                            <div class="radio calcPrice">
+                                <label>
+                                    <input type="radio" name="cheese-radio">No Cheese</label>
+                            </div>
+                        </div>
+                        <div class="option-notes">
+
+                        </div>
+                    </div>
+                </div>
+
+                <!--TOPPINGS-->
+                <div id="topping-selection" class="order-box-content row">
+                    <div class="order-box-options order-box-horz-divider col-md-6 col-s-12">
+                        <div class="order-box-subhead text-center text-uppercase">
+                            <h3>Meat Toppings</h3>
+                        </div>
+                        <div>
+                            <div class="checkbox calcPrice">
+                                <label>
+                                    <input id="pepperoni" type="checkbox" value="" name="meats-chkbox">Pepperoni</label>
+                            </div>
+                            <div class="checkbox calcPrice">
+                                <label>
+                                    <input id="sausage" type="checkbox" value="" name="meats-chkbox">Sausage</label>
+                            </div>
+                            <div class="checkbox calcPrice">
+                                <label>
+                                    <input id="bacon" type="checkbox" value="" name="meats-chkbox">Canadian Bacon</label>
+                            </div>
+                            <div class="checkbox calcPrice">
+                                <label>
+                                    <input id="beef" type="checkbox" value="" name="meats-chkbox">Ground Beef</label>
+                            </div>
+                            <div class="checkbox calcPrice">
+                                <label>
+                                    <input id="anchovy" type="checkbox" value="" name="meats-chkbox">Anchovy</label>
+                            </div>
+                            <div class="checkbox calcPrice">
+                                <label>
+                                    <input id="chicken" type="checkbox" value="" name="meats-chkbox">Chicken</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-box-options col-md-6 col-s-12">
+                        <div class="order-box-subhead text-center text-uppercase">
+                            <h3>Veggie Toppings</h3>
+                        </div>
+                        <div>
+                            <div class="checkbox calcPrice">
+                                <label>
+                                    <input id="tomato" type="checkbox" value="" name="veggie-chkbox">Tomatoes</label>
+                            </div>
+                            <div class="checkbox calcPrice">
+                                <label>
+                                    <input id="onion" type="checkbox" value="" name="veggie-chkbox">Onions</label>
+                            </div>
+                            <div class="checkbox calcPrice">
+                                <label>
+                                    <input id="olive" type="checkbox" value="" name="veggie-chkbox">Olives</label>
+                            </div>
+                            <div class="checkbox calcPrice">
+                                <label>
+                                    <input id="pepper" type="checkbox" value="" name="veggie-chkbox">Green Peppers</label>
+                            </div>
+                            <div class="checkbox calcPrice">
+                                <label>
+                                    <input id="mushroom" type="checkbox" value="" name="veggie-chkbox">Mushrooms</label>
+                            </div>
+                            <div class="checkbox calcPrice">
+                                <label>
+                                    <input id="pineapple" type="checkbox" value="" name="veggie-chkbox">Pineapple</label>
+                            </div>
+                            <div class="checkbox calcPrice">
+                                <label>
+                                    <input id="spinach" type="checkbox" value="" name="veggie-chkbox">Spinach</label>
+                            </div>
+                            <div class="checkbox calcPrice">
+                                <label>
+                                    <input id="jalapeno" type="checkbox" value="" name="veggie-chkbox">Jalapeno</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-box-buttons">
+                    <div class="float-left">
+                        <button id="btn-back" class="btn btn-primary order-box-btn" type="button">Back</button>
+                    </div>
+                    <div class="float-right">
+                        <button id="btn-next" class="btn btn-primary order-box-btn" type="button">Next</button>
+                    </div>
+                </div>
+                <div id="topping-note" class="text-center">
+                    <p>First meat and veggie topping are free, ea. additional topping is $1.00.</p>
+                </div>
+                <div id="order-summary">
+                    <div id="order-box-header" class=" order-box-subhead text-center">
+                        <h2>Order Summary</h2>
+                    </div>
+                    <div class="order-summary-list-container">
+                        <ul id="order-summary-list">
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="current-total-container" class="text-center">
+                <div>
+                    <h2 id="current-total">Current Total: </h2>
+                </div>
+            </div>
+        </section>
+        <!--/order box-->
+
+        <!--footer-->
+        <footer>
+            <div class="text-center text-white">
+                <p>Page made by <a href="https://addison-dalton.github.io/" target="_blank">Addison Dalton</a> for a Tech Academy project.</p>
+            </div>
+        </footer>
+    </div>
+    <!--/page content-->
+
+
+
+
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>

@@ -1,3 +1,105 @@
+/*===========================================
+GENERAL PAGE SETTINGS
+============================================*/
+
 body{
-    background-color:  #bc2024;
+    background-color:  #8f1014;
+}
+
+/*=========================================
+HEADER
+===========================================*/
+#header{
+    color:white;
+    margin: 25px 0;
+}
+
+/*=========================================
+ORDER BOX
+===========================================*/
+
+.order-box-container{
+    background-color: white;
+    border: 6px solid #089a45;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px #000;
+    padding: 15px 15px 0px 15px;
+}
+
+.order-box-horz-divider{
+    border-right: dotted 2px #000;
+}
+
+.order-box-subhead{
+    font-weight: bold;
+    margin: 10px auto;
+    width: 70%;
+    border-bottom: solid 3px #089a45;
+}
+
+/*order buttons*/
+.order-box-buttons{
+    width: 100%;
+    margin: 10px auto;
+    padding: 0 30%;
+    display: inline-block;
+}
+
+.order-box-buttons button{
+    background-color: #bc2024;
+    border: 1px solid #000;
+    outline: none;
+}
+
+.order-box-buttons button:hover{
+    background-color: #920308;
+}
+
+.order-box-buttons button:focus{
+    background-color: #720307;
+    outline: none;
+}
+
+.order-box-buttons button:disabled{
+    background-color: #2e2626;
+}
+
+/*=========================================
+CURRENT TOTAL BOX
+===========================================*/
+#current-total-container{
+    margin: 20px auto;
+    width: 300px;
+    background-color: white;
+    border: 6px solid #089a45;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px #000;
+
+}
+
+/*=========================================
+ORDER SUMMARY
+===========================================*/
+#order-summary-list{
+    list-style: none;
+    font-size: 1.4em;
+    width: 60%;
+    margin: 10px auto;
+
+}
+
+/*=======================================
+  @MEDIA QUERIES
+  =======================================*/
+@media (max-width: 420px){
+    .order-box-buttons{
+        display: inline-flex;
+        align-content: center;
+    }
+
+    #order-summary-list{
+        width: 100%;
+        font-size: 1.1em;
+        padding: 5px 0;
+    }
 }
